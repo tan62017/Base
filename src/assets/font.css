@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Home Title';
+  src: url(./font/home-title.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cheng Jie Lv';
+  src: url(./font/chengjielv.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,0 +1,115 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-white: #05102e;
+  --vt-c-white-soft: #f8f8f8;
+  --vt-c-white-mute: #f2f2f2;
+
+  --vt-c-black: #181818;
+  --vt-c-black-soft: #222222;
+  --vt-c-black-mute: #282828;
+
+  --vt-c-indigo: #2c3e50;
+
+  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  --text-default-color: #fff;
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-2: #9f9e9e;
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+
+  --table-bg: rgba(6, 69, 237, 0.04);
+  --table-border-color: rgba(224, 221, 221, 0.12);
+  --table-thead-bg: rgba(108, 198, 250, 0.336);
+  --table-tbody-tr-bg: rgba(6, 69, 237, 0.04);
+  --table-thead-color: #ffffff;
+  --table-tbody-color: #ffffff;
+  --table-tbody-tr-hover-color: #1d44f394;
+  --table-one-background: -webkit-linear-gradient(left, #ff5310, #e3cf15);
+  --table-two-background: -webkit-linear-gradient(
+    left,
+    #d6d5d5,
+    #a7a7a7,
+    #d6d5d5,
+    #a7a7a7
+  );
+  --table-three-background: -webkit-linear-gradient(
+    left,
+    #b9946f,
+    #82644e,
+    #b9946f,
+    #82644e
+  );
+  --table-default-background: #3b6bb6;
+
+  --home-top-height: 460px;
+  --home-but-height: 350px;
+  --home-left-width: 454px;
+  --home-right-width: 454px;
+
+  --value-margin-unit: 4px;
+
+  --dialog-mask-bg-color: #0c0c0c4f;
+  --dialog-bg-color: #1a32a171;
+}
+
+/* semantic color variables for this project */
+:root {
+  --bg-color: var(--vt-c-white);
+  --bg-color-soft: var(--vt-c-white-soft);
+  --bg-color-mute: var(--vt-c-white-mute);
+
+  --color-border: var(--vt-c-divider-light-2);
+  --color-border-hover: var(--vt-c-divider-light-1);
+
+  --color-heading: var(--vt-c-text-light-1);
+  --color-text: var(--vt-c-text-light-1);
+
+  --section-gap: 160px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: var(--vt-c-black);
+    --bg-color-soft: var(--vt-c-black-soft);
+    --bg-color-mute: var(--vt-c-black-mute);
+
+    --color-border: var(--vt-c-divider-dark-2);
+    --color-border-hover: var(--vt-c-divider-dark-1);
+
+    --color-heading: var(--vt-c-text-dark-1);
+    --color-text: var(--vt-c-text-dark-2);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 3px;
+  /*高宽分别对应横竖滚动条的尺寸*/
+  height: 3px;
+  /* scrollbar-arrow-color: red; */
+}
+
+::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 3px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: #6599a4a3;
+}
+
+::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background: #ecedee;
+}
