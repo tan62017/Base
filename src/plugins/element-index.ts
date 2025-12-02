@@ -20,6 +20,7 @@ import 'element-plus/dist/index.css';
 export default (app: App<Element>): void => {
   app.use(ElDatePicker);
   app.use(ElTable);
+  app.use(ElIcon);
   app.use(ElTableColumn);
   app.use(ElPagination);
   app.use(ElDialog);

@@ -6,11 +6,11 @@ const zip = new AdmZip();
 const __dirname = path.resolve();
 
 try {
-  const dist = path.join(__dirname, '/gxdatav/');
+  const dist = path.join(__dirname, '/dist/');
   if (fs.existsSync(dist)) {
     zip.addLocalFolder(dist);
 
-    const zipName = path.join(__dirname, '/gxdatav/' + 'gxdatav' + '.zip');
+    const zipName = path.join(__dirname, '/dist/' + 'dist' + '.zip');
 
     zip.writeZip(zipName, () => {});
   }

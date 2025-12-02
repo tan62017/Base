@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "run-p type-check \"build-only {@}\" --",
+    "build": "run-p type-check \"build-only {@}\" -- && node ./src/utils/zip_file.js",
     "build:dev": "vite build --mode development  && node ./src/utils/zip_file.js",
     "build:pro": "vite build --mode production  && node ./src/utils/zip_file.js",
     "build:test": "vite build --mode test && node ./src/utils/zip_file.js",
