@@ -46,7 +46,14 @@ export class RequestQueueManager {
       this.processQueue();
     });
   }
-
+  /**
+   * 
+   */
+  public deleteQueueItem(url: string, method: string): void {
+    this.queue = this.queue.filter(
+      (item) => !(item.config.url === url && item.config.method?.toUpperCase() === method.toUpperCase())
+    );
+  }
   /**
    * 处理队列
    */

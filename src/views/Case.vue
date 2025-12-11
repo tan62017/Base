@@ -17,6 +17,16 @@
 <script lang="ts" setup>
 import BaseEchart from '@/components/BaseEchart.vue';
 import BaseTable from '@/components/BaseTable.vue';
+import { getLastDate } from '@/api/indexHome';
+
+for (let i = 0; i < 100; i++) {
+  getLastDate({ id: i }).then((res) => {
+    console.log(res);
+  }).catch((err) => {
+    console.error("err:", err);
+  });
+
+}
 
 const list = [
   {

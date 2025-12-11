@@ -168,6 +168,7 @@ export class RequestClient implements RequestInstance {
    * 取消指定请求
    */
   public cancelRequest(url: string, method: string): void {
+    this.queueManager.deleteQueueItem(url, method);
     this.requestController.cancelRequestByUrl(url, method);
   }
 
@@ -203,7 +204,7 @@ export class RequestClient implements RequestInstance {
 const defaultConfig: RequestConfig = {
   baseURL: import.meta.env.VITE_API_BASE_URL,
   timeout: 10000,
-  withCredentials: true,
+  withCredentials: false,
   headers: {
     'Content-Type': 'application/json'
   }

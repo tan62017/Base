@@ -6,7 +6,7 @@ export class RequestController {
   private readonly REQUEST_TIMEOUT = 30000; // 30秒自动清理
 
   private constructor() {
-    this.startCleanupTimer();
+    // this.startCleanupTimer();
   }
 
   public static getInstance(): RequestController {
